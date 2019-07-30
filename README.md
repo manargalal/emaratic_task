@@ -1,4 +1,4 @@
-# emaratic_task
+# emaratech_task
 this is application for developng single web page to search in phone numbers,
 to start the project 
 please clone the code and follow the below steps
