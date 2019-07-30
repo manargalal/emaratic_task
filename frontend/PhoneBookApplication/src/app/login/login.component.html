@@ -1,0 +1,35 @@
+<div class="login-page login login-bg">
+    <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+                <div class="login-logo">
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+            
+            <form name="form" (ngSubmit)="f.form.valid && onLoggedin()" #f="ngForm" novalidate>  
+                 <h6 style="color:red">{{errorMsg}} </h6>
+                <div class="form-group username">
+                        <input type="text" class="form-control inputs username" name="username" [(ngModel)]="model.username" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required placeholder="Userame">
+                        <div *ngIf="f.submitted && !username.valid" class="invalid-feedback">
+                                <div *ngIf="username.errors.required">Username is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <input type="password" class="form-control password" name="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Password" [ngClass]="{ 'is-invalid': f.submitted && !password.valid }" minlength="6">
+                        <div *ngIf="f.submitted && !password.valid" class="invalid-feedback">
+                                <div *ngIf="password.errors.required">Password is required</div>
+                                <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                            </div>
+                    </div>>
+                    <button class="btn btn-primary" [routerLink]="['/home']" (click)="onLoggedin()">Log in</button>
+                <!-- <a class="btn btn-primary" styleClass="smallButton"  [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a> -->
+                &nbsp;
+            </form>
+        </div>
+ 
+        
+    </div>
+    </div>
+</div>

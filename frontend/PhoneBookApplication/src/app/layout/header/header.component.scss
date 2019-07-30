@@ -1,0 +1,58 @@
+/*start nav*/
+.alrm-1::after {
+    display: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  nav {
+    height: 50PX;
+    background: #2c303e; }
+    nav .title-pearnt {
+      display: flex;
+      justify-content: space-between; }
+      nav .title-pearnt .titel-logo {
+        height: 50px;
+        display: flex;
+        align-items: center; }
+        nav .title-pearnt .titel-logo img {
+          width: 50px; }
+      nav .title-pearnt .titel-text {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        nav .title-pearnt .titel-text h4 {
+          color: #fff;
+          letter-spacing: 4px;
+          margin: 0; }
+      nav .title-pearnt .title-profile {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        nav .title-pearnt .title-profile .alerm i {
+          color: #fff;
+          font-size: 2rem;
+          margin-right: 2vw; }
+          nav .title-pearnt .title-profile .alerm i::after {
+            content: "";
+            width: 13px;
+            height: 13px;
+            background-color: #fd004d;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            border-radius: 50%; }
+        nav .title-pearnt .title-profile .nears {
+          margin-right: 1vw; }
+          nav .title-pearnt .title-profile .nears img {
+            width: 40px;
+            height: 40PX; }
+        nav .title-pearnt .title-profile .drop a.dropdown-toggle {
+          color: #fff;
+          text-decoration: none; }
+  
+  /*end nav*/

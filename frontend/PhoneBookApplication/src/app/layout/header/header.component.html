@@ -1,0 +1,33 @@
+<nav>
+  <div class="container">
+    <div class="title-pearnt">
+
+      <div class="titel-text">
+        <h4>PHONE BOOK LIST</h4>
+      </div>
+      <div class="title-profile">
+        <div class="drop">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+          {{username}}
+            </a>
+
+            <div class="dropdown-menu chos" aria-labelledby="dropdownMenuLink">
+              <ul>
+
+                <li>
+                  <a class="dropdown-item" [routerLink]="['/login']" (click)="onLoggedout()">
+                    <i class="icon-power"></i>Log Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- end nav  -->
